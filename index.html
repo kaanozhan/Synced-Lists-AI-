@@ -1,60 +1,27 @@
-<html lang="en">
+ <!DOCTYPE html>
+  <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Synced Lists - AI-Powered Shopping Lists</title>
+      <meta name="description" content="Create, share, and sync shopping lists with AI-powered 
+  suggestions. Perfect for families, couples, and teams. Available on iOS.">
+      <meta name="keywords" content="shopping lists, AI shopping, collaborative lists, family 
+  shopping, grocery lists, iOS app">
+      <link rel="canonical" href="https://kaanozhan.github.io/Synced-Lists-AI-/">
 
-      <!-- SEO Meta Tags -->
-      <title>Synced Lists - Smart Shopping & Task Lists | Collaborate in Real-Time</title>
-      <meta name="description" content="Create, share, and sync shopping lists with friends and
-   family in real-time. Smart collaborative list management app with AI-powered suggestions. 
-  Download free on iOS.">
-      <meta name="keywords" content="shopping lists, grocery lists, collaborative lists, 
-  real-time sync, family shopping, task management, iOS app, list sharing, smart lists">
-      <meta name="author" content="Synced Lists">
-      <meta name="robots" content="index, follow">
-
-      <!-- Open Graph Meta Tags -->
-      <meta property="og:title" content="Synced Lists - Smart Shopping & Task Lists">
+      <!-- Open Graph -->
+      <meta property="og:title" content="Synced Lists - AI-Powered Shopping Lists">
       <meta property="og:description" content="Create, share, and sync shopping lists with 
-  friends and family in real-time. Never forget an item again!">
+  AI-powered suggestions. Perfect for families, couples, and teams.">
       <meta property="og:type" content="website">
-      <meta property="og:url" content="https://yourusername.github.io/synced-lists">
-      <meta property="og:image" 
-  content="https://yourusername.github.io/synced-lists/app-icon.png">
+      <meta property="og:url" content="https://kaanozhan.github.io/Synced-Lists-AI-/">
 
-      <!-- Twitter Card Meta Tags -->
+      <!-- Twitter Card -->
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:title" content="Synced Lists - Smart Shopping & Task Lists">
+      <meta name="twitter:title" content="Synced Lists - AI-Powered Shopping Lists">
       <meta name="twitter:description" content="Create, share, and sync shopping lists with 
-  friends and family in real-time.">
-      <meta name="twitter:image" 
-  content="https://yourusername.github.io/synced-lists/app-icon.png">
-
-      <!-- Favicon -->
-      <link rel="icon" type="image/x-icon" href="/favicon.ico">
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-      <!-- Schema.org JSON-LD -->
-      <script type="application/ld+json">
-      {
-          "@context": "https://schema.org",
-          "@type": "MobileApplication",
-          "name": "Synced Lists",
-          "description": "Smart shopping and task lists app with real-time collaboration",
-          "applicationCategory": "ProductivityApplication",
-          "operatingSystem": "iOS",
-          "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "150"
-          }
-      }
-      </script>
+  AI-powered suggestions. Perfect for families, couples, and teams.">
 
       <style>
           * {
@@ -64,219 +31,219 @@
           }
 
           body {
-              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, sans-serif;
               line-height: 1.6;
               color: #333;
-              overflow-x: hidden;
-          }
-
-          .hero {
               background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
               min-height: 100vh;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              color: white;
-              position: relative;
-              overflow: hidden;
-          }
-
-          .hero::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" 
-  viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" 
-  patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" 
-  opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" 
-  cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" 
-  opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" 
-  opacity="0.1"/></pattern></defs><rect width="100" height="100" 
-  fill="url(%23grain)"/></svg>');
-              animation: float 20s ease-in-out infinite;
-          }
-
-          @keyframes float {
-              0%, 100% { transform: translateY(0px); }
-              50% { transform: translateY(-20px); }
-          }
-
-          .hero-content {
-              max-width: 800px;
-              padding: 20px;
-              z-index: 2;
-              position: relative;
-              animation: fadeInUp 1s ease-out;
-          }
-
-          @keyframes fadeInUp {
-              from {
-                  opacity: 0;
-                  transform: translateY(50px);
-              }
-              to {
-                  opacity: 1;
-                  transform: translateY(0);
-              }
-          }
-
-          .hero h1 {
-              font-size: 3.5rem;
-              font-weight: 700;
-              margin-bottom: 20px;
-              text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-          }
-
-          .hero p {
-              font-size: 1.3rem;
-              margin-bottom: 30px;
-              opacity: 0.95;
-          }
-
-          .app-store-button {
-              display: inline-block;
-              background: #000;
-              color: white;
-              padding: 15px 30px;
-              border-radius: 15px;
-              text-decoration: none;
-              font-weight: 600;
-              font-size: 1.1rem;
-              transition: all 0.3s ease;
-              box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-          }
-
-          .app-store-button:hover {
-              transform: translateY(-3px);
-              box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-          }
-
-          .features {
-              padding: 100px 20px;
-              background: #f8f9fa;
           }
 
           .container {
               max-width: 1200px;
               margin: 0 auto;
+              padding: 0 20px;
           }
 
-          .section-title {
-              text-align: center;
-              font-size: 2.5rem;
+          .header {
+              background: rgba(255, 255, 255, 0.95);
+              backdrop-filter: blur(20px);
+              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+              position: sticky;
+              top: 0;
+              z-index: 100;
+          }
+
+          .nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1rem 0;
+          }
+
+          .logo {
+              font-size: 1.5rem;
               font-weight: 700;
-              margin-bottom: 60px;
-              color: #2c3e50;
+              background: linear-gradient(135deg, #667eea, #764ba2);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+          }
+
+          .hero {
+              text-align: center;
+              padding: 4rem 0;
+              color: white;
+          }
+
+          .hero h1 {
+              font-size: 3.5rem;
+              font-weight: 800;
+              margin-bottom: 1rem;
+              text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+          }
+
+          .hero .subtitle {
+              font-size: 1.3rem;
+              margin-bottom: 2rem;
+              opacity: 0.9;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+          }
+
+          .cta-button {
+              display: inline-block;
+              background: rgba(255, 255, 255, 0.2);
+              color: white;
+              padding: 1rem 2rem;
+              border-radius: 50px;
+              text-decoration: none;
+              font-weight: 600;
+              font-size: 1.1rem;
+              border: 2px solid rgba(255, 255, 255, 0.3);
+              backdrop-filter: blur(10px);
+              transition: all 0.3s ease;
+          }
+
+          .cta-button:hover {
+              background: rgba(255, 255, 255, 0.3);
+              transform: translateY(-2px);
+              box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+          }
+
+          .content-section {
+              background: white;
+              margin: 2rem 0;
+              border-radius: 20px;
+              padding: 3rem;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+              backdrop-filter: blur(10px);
           }
 
           .features-grid {
               display: grid;
               grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-              gap: 40px;
-              margin-bottom: 80px;
+              gap: 2rem;
+              margin: 2rem 0;
           }
 
           .feature-card {
-              background: white;
-              padding: 40px 30px;
-              border-radius: 20px;
               text-align: center;
-              box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              padding: 2rem;
+              border-radius: 15px;
+              background: linear-gradient(135deg, #f8f9ff, #e8efff);
+              border: 1px solid rgba(102, 126, 234, 0.1);
+              transition: transform 0.3s ease;
           }
 
           .feature-card:hover {
-              transform: translateY(-10px);
-              box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+              transform: translateY(-5px);
+              box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
           }
 
           .feature-icon {
               font-size: 3rem;
-              margin-bottom: 20px;
-              display: block;
+              margin-bottom: 1rem;
           }
 
           .feature-card h3 {
-              font-size: 1.5rem;
-              font-weight: 600;
-              margin-bottom: 15px;
-              color: #2c3e50;
+              color: #667eea;
+              margin-bottom: 1rem;
+              font-size: 1.3rem;
           }
 
-          .feature-card p {
-              color: #666;
-              line-height: 1.6;
+          .pricing-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 2rem;
+              margin: 2rem 0;
           }
 
-          .cta-section {
-              background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-              color: white;
-              padding: 100px 20px;
+          .pricing-card {
+              background: white;
+              border-radius: 20px;
+              padding: 2rem;
               text-align: center;
+              border: 2px solid #f0f0f0;
+              transition: all 0.3s ease;
+              position: relative;
           }
 
-          .cta-content h2 {
+          .pricing-card.featured {
+              border-color: #667eea;
+              transform: scale(1.05);
+              box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+          }
+
+          .pricing-card.featured::before {
+              content: "Most Popular";
+              position: absolute;
+              top: -10px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: #667eea;
+              color: white;
+              padding: 0.5rem 1rem;
+              border-radius: 20px;
+              font-size: 0.8rem;
+              font-weight: 600;
+          }
+
+          .price {
               font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 20px;
+              font-weight: 800;
+              color: #667eea;
+              margin: 1rem 0;
           }
 
-          .cta-content p {
-              font-size: 1.2rem;
-              margin-bottom: 30px;
-              opacity: 0.95;
+          .support-section {
+              background: linear-gradient(135deg, #667eea, #764ba2);
+              color: white;
+              border-radius: 20px;
+              padding: 3rem;
+              margin: 2rem 0;
+          }
+
+          .support-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 2rem;
+              margin-top: 2rem;
+          }
+
+          .support-item {
+              background: rgba(255, 255, 255, 0.1);
+              padding: 1.5rem;
+              border-radius: 15px;
+              backdrop-filter: blur(10px);
           }
 
           .footer {
-              background: #2c3e50;
-              color: white;
-              padding: 60px 20px 30px;
-          }
-
-          .footer-content {
-              max-width: 1200px;
-              margin: 0 auto;
+              background: rgba(255, 255, 255, 0.95);
+              backdrop-filter: blur(20px);
+              padding: 2rem 0;
               text-align: center;
+              margin-top: 2rem;
           }
 
-          .footer-links {
-              display: flex;
-              justify-content: center;
-              gap: 30px;
-              margin-bottom: 30px;
-              flex-wrap: wrap;
+          .section-title {
+              font-size: 2.5rem;
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 1rem;
+              background: linear-gradient(135deg, #667eea, #764ba2);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
           }
 
-          .footer-links a {
-              color: white;
-              text-decoration: none;
-              font-weight: 500;
-              transition: color 0.3s ease;
-          }
-
-          .footer-links a:hover {
-              color: #4CAF50;
-          }
-
-          .social-links {
-              margin-bottom: 30px;
-          }
-
-          .social-links a {
-              display: inline-block;
-              margin: 0 15px;
-              font-size: 1.5rem;
-              color: white;
-              transition: color 0.3s ease;
-          }
-
-          .social-links a:hover {
-              color: #4CAF50;
+          .section-subtitle {
+              text-align: center;
+              font-size: 1.1rem;
+              color: #666;
+              max-width: 600px;
+              margin: 0 auto 2rem;
           }
 
           @media (max-width: 768px) {
@@ -284,175 +251,203 @@
                   font-size: 2.5rem;
               }
 
-              .hero p {
-                  font-size: 1.1rem;
+              .content-section {
+                  padding: 2rem 1rem;
+                  margin: 1rem 0;
               }
 
-              .section-title {
-                  font-size: 2rem;
+              .pricing-card.featured {
+                  transform: none;
               }
-
-              .features-grid {
-                  grid-template-columns: 1fr;
-                  gap: 30px;
-              }
-
-              .footer-links {
-                  flex-direction: column;
-                  gap: 15px;
-              }
-          }
-
-          .phone-mockup {
-              max-width: 300px;
-              margin: 40px auto;
-              animation: phoneFloat 3s ease-in-out infinite;
-          }
-
-          @keyframes phoneFloat {
-              0%, 100% { transform: translateY(0px); }
-              50% { transform: translateY(-15px); }
-          }
-
-          .stats {
-              display: flex;
-              justify-content: center;
-              gap: 60px;
-              margin-top: 60px;
-              flex-wrap: wrap;
-          }
-
-          .stat {
-              text-align: center;
-          }
-
-          .stat-number {
-              font-size: 2.5rem;
-              font-weight: 700;
-              color: #4CAF50;
-              display: block;
-          }
-
-          .stat-label {
-              font-size: 0.9rem;
-              opacity: 0.8;
           }
       </style>
   </head>
   <body>
+      <header class="header">
+          <div class="container">
+              <nav class="nav">
+                  <div class="logo">📋 Synced Lists</div>
+                  <div>
+                      <a href="#features" style="margin-right: 2rem; text-decoration: none; 
+  color: #667eea; font-weight: 600;">Features</a>
+                      <a href="#pricing" style="margin-right: 2rem; text-decoration: none; 
+  color: #667eea; font-weight: 600;">Pricing</a>
+                      <a href="#support" style="text-decoration: none; color: #667eea; 
+  font-weight: 600;">Support</a>
+                  </div>
+              </nav>
+          </div>
+      </header>
+
       <section class="hero">
-          <div class="hero-content">
-              <h1>Synced Lists</h1>
-              <p>Create, share, and sync shopping lists with friends and family in real-time.
-  Never forget an item again with smart collaborative list management.</p>
-
-              <div class="phone-mockup">
-                  📱
-              </div>
-
-              <a href="https://apps.apple.com/app/synced-lists" class="app-store-button" 
-  aria-label="Download Synced Lists on the App Store">
-                  📱 Download on App Store
-              </a>
-
-              <div class="stats">
-                  <div class="stat">
-                      <span class="stat-number">10K+</span>
-                      <span class="stat-label">Happy Users</span>
-                  </div>
-                  <div class="stat">
-                      <span class="stat-number">4.8★</span>
-                      <span class="stat-label">App Store Rating</span>
-                  </div>
-                  <div class="stat">
-                      <span class="stat-number">50K+</span>
-                      <span class="stat-label">Lists Created</span>
-                  </div>
-              </div>
+          <div class="container">
+              <h1>Smart Lists, Smarter Shopping</h1>
+              <p class="subtitle">Create, share, and sync your shopping lists with AI-powered
+  suggestions. Perfect for families, couples, and teams who shop together.</p>
+              <a href="https://apps.apple.com/app/your-app-id" class="cta-button">📱 Download
+  on App Store</a>
           </div>
       </section>
 
-      <section class="features">
-          <div class="container">
-              <h2 class="section-title">Why Choose Synced Lists?</h2>
+      <div class="container">
+          <section id="features" class="content-section">
+              <h2 class="section-title">Powerful Features</h2>
+              <p class="section-subtitle">Everything you need to organize your shopping and
+  collaborate with others</p>
 
               <div class="features-grid">
                   <div class="feature-card">
-                      <span class="feature-icon">🔄</span>
-                      <h3>Real-Time Sync</h3>
-                      <p>Instantly sync your shopping lists across all devices. Changes appear
-  immediately for all family members and collaborators.</p>
-                  </div>
-
-                  <div class="feature-card">
-                      <span class="feature-icon">👥</span>
-                      <h3>Easy Collaboration</h3>
-                      <p>Share lists with family and friends effortlessly. Everyone can add,
-  edit, and check off items in real-time.</p>
-                  </div>
-
-                  <div class="feature-card">
-                      <span class="feature-icon">🛒</span>
-                      <h3>Smart Shopping</h3>
-                      <p>Tap the shopping cart icon to instantly search for items on Google
-  Shopping and find the best deals.</p>
-                  </div>
-
-                  <div class="feature-card">
-                      <span class="feature-icon">🤖</span>
+                      <div class="feature-icon">🤖</div>
                       <h3>AI-Powered Suggestions</h3>
-                      <p>Get intelligent item suggestions based on your shopping history and
-  preferences with Synced Lists Pro.</p>
+                      <p>Get smart item suggestions based on your shopping patterns and
+  preferences. Never forget essentials again.</p>
                   </div>
 
                   <div class="feature-card">
-                      <span class="feature-icon">📊</span>
-                      <h3>Progress Tracking</h3>
-                      <p>See your shopping progress at a glance with visual indicators showing
-  completed vs remaining items.</p>
+                      <div class="feature-icon">👥</div>
+                      <h3>Real-time Collaboration</h3>
+                      <p>Share lists with family and friends. See updates instantly as others
+  add or check off items.</p>
                   </div>
 
                   <div class="feature-card">
-                      <span class="feature-icon">🔒</span>
-                      <h3>Secure & Private</h3>
-                      <p>Your data is encrypted and secure. Sign in with Apple or email for
-  maximum privacy protection.</p>
+                      <div class="feature-icon">☁️</div>
+                      <h3>Cloud Sync</h3>
+                      <p>Access your lists anywhere, anytime. Seamlessly sync across all your
+  devices.</p>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">🎨</div>
+                      <h3>Beautiful Design</h3>
+                      <p>Colorful, intuitive interface with emoji icons. Making list management
+   delightful.</p>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">🔒</div>
+                      <h3>Privacy Focused</h3>
+                      <p>Your data is encrypted and secure. We respect your privacy and never
+  sell your information.</p>
+                  </div>
+
+                  <div class="feature-card">
+                      <div class="feature-icon">📱</div>
+                      <h3>Native iOS App</h3>
+                      <p>Built specifically for iOS with support for all the latest features
+  and optimizations.</p>
                   </div>
               </div>
-          </div>
-      </section>
+          </section>
 
-      <section class="cta-section">
-          <div class="container">
-              <div class="cta-content">
-                  <h2>Start Organizing Smarter Today</h2>
-                  <p>Join thousands of families who've simplified their shopping with Synced
-  Lists. Free to start, Pro features available.</p>
-                  <a href="https://apps.apple.com/app/synced-lists" class="app-store-button" 
-  aria-label="Download Synced Lists on the App Store">
-                      Get Started Free
-                  </a>
+          <section id="pricing" class="content-section">
+              <h2 class="section-title">Simple Pricing</h2>
+              <p class="section-subtitle">Start free, upgrade when you need more power</p>
+
+              <div class="pricing-grid">
+                  <div class="pricing-card">
+                      <h3>Free</h3>
+                      <div class="price">$0</div>
+                      <p style="margin-bottom: 2rem;">Perfect for getting started</p>
+                      <ul style="text-align: left; margin-bottom: 2rem;">
+                          <li>✅ Up to 5 lists</li>
+                          <li>✅ 5 AI suggestions/month</li>
+                          <li>✅ Basic list sharing</li>
+                          <li>✅ Cloud sync</li>
+                      </ul>
+                  </div>
+
+                  <div class="pricing-card featured">
+                      <h3>Pro</h3>
+                      <div class="price">$1.99<span style="font-size: 1rem; opacity: 
+  0.7;">/month</span></div>
+                      <p style="margin-bottom: 2rem;">For power users and families</p>
+                      <ul style="text-align: left; margin-bottom: 2rem;">
+                          <li>✅ Unlimited lists</li>
+                          <li>✅ 100 AI suggestions/month</li>
+                          <li>✅ Advanced collaboration</li>
+                          <li>✅ Priority support</li>
+                          <li>✅ Early access to features</li>
+                      </ul>
+                  </div>
               </div>
-          </div>
-      </section>
+          </section>
+
+          <section id="support" class="support-section">
+              <div class="container">
+                  <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Need
+  Help?</h2>
+                  <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">We're here
+  to help you get the most out of Synced Lists</p>
+
+                  <div class="support-grid">
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">📧 Email Support</h3>
+                          <p>Get personalized help from our team. We typically respond within
+  24 hours.</p>
+                          <a href="mailto:kaanozhan@gmail.com" style="color: #fff; 
+  font-weight: 600;">kaanozhan@gmail.com</a>
+                      </div>
+
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">❓ Frequently Asked Questions</h3>
+                          <p><strong>Q: How do I share a list?</strong><br>
+                          A: Tap the share button on any list and enter your friend's username
+  or email.</p>
+
+                          <p style="margin-top: 1rem;"><strong>Q: Can I use the app
+  offline?</strong><br>
+                          A: Yes! Your lists work offline and sync when you're back online.</p>
+                      </div>
+
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">🐛 Report a Bug</h3>
+                          <p>Found an issue? Let us know and we'll fix it quickly. Include your
+   device model and iOS version.</p>
+                          <a href="mailto:kaanozhan@gmail.com" style="color: #fff; 
+  font-weight: 600;">kaanozhan@gmail.comp</a>
+                      </div>
+
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">💡 Feature Requests</h3>
+                          <p>Have an idea for a new feature? We love hearing from our users and
+   regularly implement user suggestions.</p>
+                          <a href="mailto:kaanozhan@gmail.com" style="color: #fff; 
+  font-weight: 600;">kaanozhan@gmail.com</a>
+                      </div>
+
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">🔄 Account & Billing</h3>
+                          <p>Questions about your subscription or need to manage your account?
+  We're here to help.</p>
+                          <p style="margin-top: 0.5rem; opacity: 0.8;">Manage subscriptions in
+  iOS Settings → Apple ID → Subscriptions</p>
+                      </div>
+
+                      <div class="support-item">
+                          <h3 style="margin-bottom: 1rem;">📱 Getting Started</h3>
+                          <p><strong>New to Synced Lists?</strong></p>
+                          <ol style="margin-top: 0.5rem; opacity: 0.9;">
+                              <li>Create your first list</li>
+                              <li>Add items with AI suggestions</li>
+                              <li>Share with family & friends</li>
+                              <li>Shop together in real-time!</li>
+                          </ol>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
 
       <footer class="footer">
-          <div class="footer-content">
-              <div class="footer-links">
-                  <a href="privacy-policy.html">Privacy Policy</a>
-                  <a href="terms.html">Terms of Service</a>
-                  <a href="support.html">Support</a>
-                  <a href="contact.html">Contact</a>
-              </div>
-
-              <div class="social-links">
-                  <a href="#" aria-label="Follow us on Twitter">🐦</a>
-                  <a href="#" aria-label="Like us on Facebook">📘</a>
-                  <a href="#" aria-label="Follow us on Instagram">📷</a>
-              </div>
-
-              <p>&copy; 2025 Synced Lists. All rights reserved.</p>
-              <p>Made with ❤️ for better organization</p>
+          <div class="container">
+              <p>&copy; 2024 Synced Lists. All rights reserved.</p>
+              <p style="margin-top: 0.5rem;">
+                  <a href="privacy_policy" style="color: #667eea; text-decoration: none; 
+  margin: 0 1rem;">Privacy Policy</a>
+                  <a href="mailto:contact@syncedlists.app" style="color: #667eea; 
+  text-decoration: none; margin: 0 1rem;">Contact</a>
+              </p>
           </div>
       </footer>
   </body>
